@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Google Pinyin Mod</string>
+    <string name="xposed_module_description">Allows more configurations and features on Google Pinyin input method.</string>
+
+    <string name="settings">设置</string>
+    <string name="about">关于</string>
+
+    <string name="no_color_selected">未选择颜色</string>
+</resources>

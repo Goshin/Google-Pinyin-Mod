@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="版本">
+        <Preference android:title="Beta 0.0.1 试验性版本" />
+        <Preference
+            android:summary="https://github.com/Goshin/Google-Pinyin-Mod"
+            android:title="源代码">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/Goshin/Google-Pinyin-Mod" />
+        </Preference>
+        <Preference
+            android:summary="软件及源代码基于 GPLv3 协议发布"
+            android:title="GNU 通用公共许可协议" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="作者">
+        <Preference
+            android:summary="githubjohn@gmail.com\n正式的建议和反馈请在 GitHub 提交 issue"
+            android:title="John" />
+        <EditTextPreference
+            android:defaultValue="支付宝：seqc@qq.com"
+            android:summary="如果你觉得应用对你有所帮助，希望能够帮助开发，欢迎向作者捐赠。"
+            android:title="捐助" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

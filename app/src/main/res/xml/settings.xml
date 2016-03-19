@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceScreen
+        android:summary="暂时只有修改颜色这个功能"
+        android:title="颜色">
+
+        <Preference
+            android:summary="重启谷歌拼音后生效\n暂不支持多套方案，可以暂时先使用钛备份保存配色数据\n清除本应用数据即可恢复"
+            android:title="修改请参照颜色名" />
+
+        <PreferenceCategory android:title="键盘底色">
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="base_material_dark_theme"
+                android:title="base_material_dark_theme"
+                app:colorpicker_defaultColor="#ff263238"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="base_material_light_theme"
+                android:title="base_material_light_theme"
+                app:colorpicker_defaultColor="#ffeceff1"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+        </PreferenceCategory>
+
+
+        <PreferenceCategory android:title="候选栏">
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="header_candidate_material_dark_theme"
+                android:title="header_candidate_material_dark_theme"
+                app:colorpicker_defaultColor="#ff21272b"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="header_candidate_material_light_theme"
+                android:title="header_candidate_material_light_theme"
+                app:colorpicker_defaultColor="#ffe4e7e9"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="composing_material_dark_theme"
+                android:title="候选栏上面的拼音组成（深色主题）"
+                app:colorpicker_defaultColor="#e6263238"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="composing_material_light_theme"
+                android:title="候选栏上面的拼音组成（浅色主题）"
+                app:colorpicker_defaultColor="#e6eceff1"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+        </PreferenceCategory>
+
+
+        <PreferenceCategory android:title="字体颜色">
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_material_dark_theme"
+                android:title="label_material_dark_theme"
+                app:colorpicker_defaultColor="#ccffffff"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_material_light_theme"
+                android:title="label_material_light_theme"
+                app:colorpicker_defaultColor="#ff37474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_qwerty_secondary_row3_material_dark_theme"
+                android:title="label_qwerty_secondary_row3_material_dark_theme"
+                app:colorpicker_defaultColor="#99ffffff"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_qwerty_secondary_row3_material_light_theme"
+                android:title="label_qwerty_secondary_row3_material_light_theme"
+                app:colorpicker_defaultColor="#cc37474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_secondary_material_dark_theme"
+                android:title="label_secondary_material_dark_theme"
+                app:colorpicker_defaultColor="#99ffffff"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_secondary_material_light_theme"
+                android:title="label_secondary_material_light_theme"
+                app:colorpicker_defaultColor="#cc37474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_secondary_sub_material_dark_theme"
+                android:title="label_secondary_sub_material_dark_theme"
+                app:colorpicker_defaultColor="#33ffffff"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_secondary_sub_material_light_theme"
+                android:title="label_secondary_sub_material_light_theme"
+                app:colorpicker_defaultColor="#9937474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_space_material_dark_theme"
+                android:title="label_space_material_dark_theme"
+                app:colorpicker_defaultColor="#33cfd8dc"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_space_material_light_theme"
+                android:title="label_space_material_light_theme"
+                app:colorpicker_defaultColor="#b337474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_sup_dark_material_dark_theme"
+                android:title="label_sup_dark_material_dark_theme"
+                app:colorpicker_defaultColor="#99ffffff"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_sup_dark_material_light_theme"
+                android:title="label_sup_dark_material_light_theme"
+                app:colorpicker_defaultColor="#cc37474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_sup_light_material_dark_theme"
+                android:title="label_sup_light_material_dark_theme"
+                app:colorpicker_defaultColor="#ff808184"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_sup_light_material_light_theme"
+                android:title="label_sup_light_material_light_theme"
+                app:colorpicker_defaultColor="#9937474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_darkkey_material_dark_theme"
+                android:title="label_darkkey_material_dark_theme"
+                app:colorpicker_defaultColor="#ccffffff"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_darkkey_material_light_theme"
+                android:title="label_darkkey_material_light_theme"
+                app:colorpicker_defaultColor="#ff37474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_function_key_material_dark_theme"
+                android:title="label_function_key_material_dark_theme"
+                app:colorpicker_defaultColor="#ccffffff"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_function_key_material_light_theme"
+                android:title="label_function_key_material_light_theme"
+                app:colorpicker_defaultColor="#cc37474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_function_light_key_material_dark_theme"
+                android:title="label_function_light_key_material_dark_theme"
+                app:colorpicker_defaultColor="#ccffffff"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_function_light_key_material_light_theme"
+                android:title="label_function_light_key_material_light_theme"
+                app:colorpicker_defaultColor="#cc37474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="inline_composing_text_correction_material_dark_theme"
+                android:title="inline_composing_text_correction_material_dark_theme"
+                app:colorpicker_defaultColor="#e6c9d1cb"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="inline_composing_text_correction_material_light_theme"
+                android:title="inline_composing_text_correction_material_light_theme"
+                app:colorpicker_defaultColor="#e67b847f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_reading_text_candidate_material_dark_theme"
+                android:title="label_reading_text_candidate_material_dark_theme"
+                app:colorpicker_defaultColor="#ccffffff"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_reading_text_candidate_material_light_theme"
+                android:title="label_reading_text_candidate_material_light_theme"
+                app:colorpicker_defaultColor="#ff37474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_composing_text_material_dark_theme"
+                android:title="label_composing_text_material_dark_theme"
+                app:colorpicker_defaultColor="#e680cbc4"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_composing_text_material_light_theme"
+                android:title="label_composing_text_material_light_theme"
+                app:colorpicker_defaultColor="#e600847d"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+        </PreferenceCategory>
+
+        <PreferenceCategory android:title="按键效果">
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="key_pressed_material_dark_theme"
+                android:title="key_pressed_material_dark_theme"
+                app:colorpicker_defaultColor="#1affffff"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="key_pressed_material_light_theme"
+                android:title="key_pressed_material_light_theme"
+                app:colorpicker_defaultColor="#1937474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="keyboard_separator_material_dark_theme"
+                android:title="keyboard_separator_material_dark_theme"
+                app:colorpicker_defaultColor="#1affffff"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="keyboard_separator_material_light_theme"
+                android:title="keyboard_separator_material_light_theme"
+                app:colorpicker_defaultColor="#3337474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="popup_background_material_dark_theme"
+                android:title="popup_background_material_dark_theme"
+                app:colorpicker_defaultColor="#ff3c474c"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="popup_background_material_light_theme"
+                android:title="popup_background_material_light_theme"
+                app:colorpicker_defaultColor="#ffd9dbdd"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+        </PreferenceCategory>
+
+
+        <PreferenceCategory android:title="分页条">
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="page_indicator_material_dark_theme"
+                android:title="page_indicator_material_dark_theme"
+                app:colorpicker_defaultColor="#ff7fcac3"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+        </PreferenceCategory>
+
+
+        <PreferenceCategory android:title="滑行轨迹">
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="ColorGestureTrackMaterialDarkTheme"
+                android:title="ColorGestureTrackMaterialDarkTheme"
+                app:colorpicker_defaultColor="#ff80cbc4"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="ColorGestureTrackMaterialLightTheme"
+                android:title="ColorGestureTrackMaterialLightTheme"
+                app:colorpicker_defaultColor="#ff4db6ac"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+        </PreferenceCategory>
+
+
+        <PreferenceCategory android:title="手写">
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="ColorHandwritingFullscreenStrokeMaterialTheme"
+                android:title="ColorHandwritingFullscreenStrokeMaterialTheme"
+                app:colorpicker_defaultColor="#ff37474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="ColorHandwritingInputViewHalfScreenBackgroundMaterialDarkTheme"
+                android:title="ColorHandwritingInputViewHalfScreenBackgroundMaterialDarkTheme"
+                app:colorpicker_defaultColor="#ff384248"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="ColorHandwritingStrokeMaterialDarkTheme"
+                android:title="ColorHandwritingStrokeMaterialDarkTheme"
+                app:colorpicker_defaultColor="#ffffffff"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="ColorHandwritingStrokeMaterialLightTheme"
+                android:title="ColorHandwritingStrokeMaterialLightTheme"
+                app:colorpicker_defaultColor="#ff37474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+        </PreferenceCategory>
+
+
+        <PreferenceCategory android:title="未分类">
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_9key_left_panel_material_dark_theme"
+                android:title="label_9key_left_panel_material_dark_theme"
+                app:colorpicker_defaultColor="#99ffffff"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_9key_left_panel_material_light_theme"
+                android:title="label_9key_left_panel_material_light_theme"
+                app:colorpicker_defaultColor="#9937474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_dashboard_active_layout_material_light_theme"
+                android:title="label_dashboard_active_layout_material_light_theme"
+                app:colorpicker_defaultColor="#cc37474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_dashboard_inactive_layout_material_light_theme"
+                android:title="label_dashboard_inactive_layout_material_light_theme"
+                app:colorpicker_defaultColor="#9937474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_disabled_material_dark_theme"
+                android:title="label_disabled_material_dark_theme"
+                app:colorpicker_defaultColor="#44ffffff"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_disabled_material_light_theme"
+                android:title="label_disabled_material_light_theme"
+                app:colorpicker_defaultColor="#5537474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_non_prime_header_active_material_light_theme"
+                android:title="label_non_prime_header_active_material_light_theme"
+                app:colorpicker_defaultColor="#ff37474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_non_prime_header_deactive_material_light_theme"
+                android:title="label_non_prime_header_deactive_material_light_theme"
+                app:colorpicker_defaultColor="#8037474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_popup_footer_material_dark_theme"
+                android:title="label_popup_footer_material_dark_theme"
+                app:colorpicker_defaultColor="#54cfd8dc"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_popup_footer_material_light_theme"
+                android:title="label_popup_footer_material_light_theme"
+                app:colorpicker_defaultColor="#6037474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_popup_material_dark_theme"
+                android:title="label_popup_material_dark_theme"
+                app:colorpicker_defaultColor="#ffffffff"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_popup_material_light_theme"
+                android:title="label_popup_material_light_theme"
+                app:colorpicker_defaultColor="#ff37474f"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_popup_pressed_material_dark_theme"
+                android:title="label_popup_pressed_material_dark_theme"
+                app:colorpicker_defaultColor="#ff4db6ac"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="label_popup_pressed_material_light_theme"
+                android:title="label_popup_pressed_material_light_theme"
+                app:colorpicker_defaultColor="#ff80cbc4"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+
+
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="t9_left_panel_top_line_material_dark_theme"
+                android:title="t9_left_panel_top_line_material_dark_theme"
+                app:colorpicker_defaultColor="#ff263238"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+            <com.rarepebble.colorpicker.ColorPreference
+                android:key="t9_left_panel_top_line_material_light_theme"
+                android:title="t9_left_panel_top_line_material_light_theme"
+                app:colorpicker_defaultColor="#ffeceff1"
+                app:colorpicker_noneSelectedSummaryText="@string/no_color_selected" />
+        </PreferenceCategory>
+
+    </PreferenceScreen>
+
+</PreferenceScreen>
